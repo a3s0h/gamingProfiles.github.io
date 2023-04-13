@@ -1,0 +1,425 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anuphan', sans-serif;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    /* height: 60px; */
+}
+.navTop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.logo{
+    width: 90px;
+    /* position: absolute; */
+    /* padding: 10px; */
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    /* justify-self: center; */
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: gray;
+}
+
+.searchInput{
+    background: transparent;
+    border: none;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    clip-path: circle(73.0% at 50% 18%);
+
+}
+.mainContent{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.leftContent{
+    flex:1;
+}
+
+.rightContent{
+    flex:1;
+    position: relative;
+    z-index: 3;
+}
+
+.circle{
+    background-color: rgb(255, 0, 0);
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 60px;
+}
+.imgGame{
+    width: 100%;
+    height: 500px;
+    
+}
+.gameImg{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.title{
+    font-size: 5rem;
+}
+.auto-input{
+    color: red;
+}
+.titleDesc{
+    color: rgb(212, 207, 207);
+    
+}
+
+.btns{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 20px; */
+}
+.Button{
+    margin-top: 40px;
+}
+.btn{
+    padding: 20px 25px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: 800;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btns a:last-of-type .btn{
+    color: black;
+}
+.btns a:first-of-type .btn{
+    background: transparent;
+    border: 2px solid white;
+
+}
+/* profile */
+
+.gameCorner{
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    color: black;
+}
+.bg{
+    height: auto;
+    padding: 40px;
+    clip-path: circle(71.1% at 50% 73%);
+    background-color: black;
+}
+.tot .sm{
+    font-weight: 800;
+    font-size: 3rem;
+    border-bottom: 4px solid red;
+    display: inline-block;
+
+}
+.profile{
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 50px 90px;
+  
+}
+
+.profile-card{
+    flex:1;
+    height: 60%;
+    border-radius: 2rem;
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    
+}
+.profiles{
+    height: 48%;
+    background-color: hsla(0, 0%, 100%, 0.135);
+    color: red;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.bgprofile{
+    width: 100%;
+    height: auto;
+}
+/* .desc{
+    text-shadow: 1px 1px 3px black;
+} */
+.showMore{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    font-size: 5.6rem;
+}
+
+.content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: hsla(0, 100%, 50%, 0.696);
+    color: white;
+}
+
+.additional{
+    color: rgb(255, 255, 255);
+}
+.bottom{
+    font-size: 2rem;
+}
+.bottomDesc{
+    font-size: 1.3rem;
+}
+
+/* send gratitude */
+.sendGrat{
+    height: 100vh;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.recommend{
+    /* padding: 30px; */
+    height: 80%;
+    margin-top: 100px;
+    /* background-color: yellow; */
+    background: linear-gradient(to right,hsla(0, 0%, 0%, 0.571),hsla(0, 0%, 0%, 0.63)), url('./img/csgoBg.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+}
+.leftmost{
+    height: 100%;
+    width: 50%;
+    /* flex:1; */
+    position: relative;
+}
+.titleForm{
+    text-shadow: 1px 1px 5px rgb(8, 8, 8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    display: inline-block;
+}
+.titleDesc{
+    color: red;
+}
+.rightmost{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+.form{
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+.recommendForm{
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    padding: 20px;
+    border-radius:1.3rem ;
+    box-shadow:3px 2px 4px black ;
+}
+.labelText{
+    font-size: 1.4rem;
+}
+.inputText{
+    margin-bottom: 30px;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid;
+}
+.inputText::placeholder{
+    color: lightgray;
+}
+.sendBtn{
+    /* margin-left: 50%; */
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    cursor: pointer;
+}
+.sendBtn:hover{
+    color: red;
+}
+
+/* footer */
+/* footer{
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid rgb(255, 6, 6);
+    color: white;
+}
+.main_content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+.left{
+    flex-grow: 2;
+    text-align: center;
+    font-size: 3rem;
+}
+.moreLeft{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+.right{
+    flex-grow: 1;
+} */
+
+@media screen and (max-width:480px)
+{
+    .logo{
+        width: 50px;
+    }
+    .search{
+        padding: 5px 10px;
+    }
+    .container{
+        clip-path: none;
+    }
+    .mainContent{
+        flex-direction: column;
+        /* flex-wrap: no-wrap; */
+        padding:30px;
+        gap: 40px;
+    }
+    .leftContent{
+        width: 100%;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    .titleDesc{
+        color: rgb(212, 207, 207);
+        font-size: 15px;
+    }
+    .circle{
+        left: 0px;
+        height: 500px;
+        width: 500px;
+    }
+    .btn{
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+
+    /* profiles */
+    .gameCorner{
+        height: 135vh;
+    }
+    .bg{
+        clip-path: none;
+    }
+    .profile{
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+    .profile-card h1:last-of-type{
+        font-size: 1.3rem;
+    }
+    .showMore{
+        font-size: 2rem;
+    }
+    .bottom{
+        font-size: 1.3rem;
+    }
+    .bottomDesc{
+        font-size: 1.1rem;
+    }
+    /* /send grat */
+    .recommend{
+        flex-direction: column;
+        background: linear-gradient(to right,hsla(0, 0%, 0%, 0.571),hsla(0, 0%, 0%, 0.63)), url('./img/bg_mobile.jpg');
+        background-size: cover;
+    background-repeat:no-repeat ;
+    }
+    .leftmost{
+        width: 100%;
+    }
+    .titleForm{
+        font-size: 1.2rem;
+    }
+    .rightmost{
+        width: 100%;
+    }
+    .recommendForm{
+        width: 70%;
+        height: 230px;
+        padding: 40px;
+        border-radius:0.4rem ;
+        background: hsla(0, 0%, 100%, 0.491);
+        color: white;
+    }
+    .inputText{
+        background: transparent;
+    }
+    .labelText{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .sendBtn{
+        padding: 4px 3px ;
+        font-size: 1.2rem;
+    }
+}
